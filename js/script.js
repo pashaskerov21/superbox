@@ -18,7 +18,11 @@ document.addEventListener('DOMContentLoaded', function () {
         $('.nav-tool.menu-close-button').click(function(){
             $('.black-backdrop').hide();
             $('.mobile-menu').removeClass('active')
-        })
+        });
+        $('.black-backdrop').click(function(){
+            $('.black-backdrop').hide();
+            $('.mobile-menu').removeClass('active')
+        });
 
         // category
         $('.category.has-child .toggle-button').click(function(){

@@ -1,0 +1,106 @@
+footer {
+    width: 100%;
+    position: relative;
+    background-color: #F6F7F9;
+
+    .footer-top {
+        width: 100%;
+        padding: 50px 0;
+
+        .top-inner {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+
+            @media (width >=768px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (width >=992px) {
+                @include row-between;
+            }
+
+            .footer-links {
+                @include column-center;
+                gap: 20px;
+
+                a {
+                    color: #3C3C3E;
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-align: center;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+
+                @media (width >=992px) {
+                    @include column-align-start;
+
+                    a {
+                        text-align: start;
+                    }
+
+                    &:last-child {
+                        align-items: flex-end;
+
+                        a {
+                            text-align: end;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        width: 100%;
+
+        .bottom-inner {
+            @include column-center;
+            border-top: 1px solid #C5C5CC;
+            padding: 20px 0;
+            gap: 20px;
+            .copyright {
+                text-align: center;
+                color: #B1B1B9;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            .social-icons{
+                @include row-center;
+                gap: 15px;
+                a{
+                    display: block;
+                    img{
+                        object-fit: contain;
+                    }
+                }
+            }
+            @media (width >= 992px){
+                padding: 40px 0;
+                @include row-between;
+                .bottom-left{
+                    width: 100%;
+                    @include row-justify-start;
+                }
+                .bottom-center{
+                    width: 100%;
+                    @include row-center;
+                }
+                .bottom-right{
+                    width: 100%;
+                    @include row-justify-end;
+                }
+            }
+        }
+    }
+}
