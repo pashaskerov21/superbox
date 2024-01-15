@@ -366,12 +366,12 @@ header nav.general-navbar .nav-right {
 header .logo {
   display: block;
   width: 100%;
-  max-width: 270px;
+  max-width: 200px;
   height: 40px;
 }
 @media (width >= 768px) {
   header .logo {
-    max-width: 370px;
+    max-width: 350px;
   }
 }
 header .logo.secondary {
