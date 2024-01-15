@@ -1,0 +1,172 @@
+header {
+    .logo {
+        display: block;
+        width: 100%;
+        max-width: 270px;
+        height: 40px;
+        @media (width >= 768px){
+            max-width: 370px;
+        }
+        &.secondary {
+            width: 180px;
+            height: 120px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .search-form {
+        width: 100%;
+        max-width: 798px;
+        position: relative;
+
+        input {
+            width: 100%;
+            height: 40px;
+            background-color: #F1F1F1;
+            outline: none;
+            border: none;
+            padding: 12px 20px;
+            padding-right: 45px;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+
+            &::placeholder {
+                color: #9F9F9F;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            right: 12px;
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+        }
+    }
+
+    .nav-tools {
+        @include row-justify-end;
+        gap: 5px;
+        @media (width >= 768px){
+            gap: 10px;
+        }
+    }
+    .nav-tool {
+        @include row-center;
+        gap: 10px;
+        min-height: 40px;
+        background-color: #F1F1F1;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+
+        .tool-title {
+            color: #000;
+            font-family: Inter;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &:hover {
+            .tool-title {
+                color: $primary-color;
+            }
+            i{
+                color: $primary-color;
+                transition: all 0.2s;
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                -o-transition: all 0.2s;
+}
+        }
+
+        &.language {
+            position: relative;
+            cursor: pointer;
+
+            .active-locale {
+                @include row-center;
+                gap: 10px;
+
+                span {
+                    text-transform: uppercase;
+                    color: #000;
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                i {
+                    font-size: 12px;
+                }
+            }
+
+            .locale-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #F1F1F1;
+                padding: 0px 10px 10px;
+                display: none;
+                border-radius: 2px;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                -ms-border-radius: 2px;
+                -o-border-radius: 2px;
+
+                a {
+                    width: 100%;
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                    color: #000;
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            &:hover {
+                .locale-menu {
+                    display: block;
+                }
+            }
+        }
+    }
+}

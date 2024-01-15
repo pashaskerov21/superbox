@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Superbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+
+    <div class="top-alert-wrapper">
+        <div class="close-button"><i class="fa-solid fa-xmark"></i></div>
+        <div class="container">
+            <div class="alert-inner">
+                <div class="alert-text"><strong>Yeni il gəldi!</strong> Yeni ilə aid qutular, hədiyyə paketləri,
+                    suvenirlər <strong>SuperBox</strong> mağazasında.</div>
+                <a href="#" class="alert-button">Kampaniyaları qaçırma <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="mobile-navbar d-lg-none">
+            <div class="container">
+                <div class="nav-inner">
+                    <a href="index.html" class="logo">
+                        <img src="image/logo/logo-2.svg" width="370" height="40" alt="">
+                    </a>
+                    <div class="nav-tools">
+                        <div class="nav-tool">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="nav-tool">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="general-navbar d-none d-lg-block">
+            <div class="container">
+                <div class="nav-inner">
+                    <div class="nav-left">
+                        <a href="index.html" class="logo secondary">
+                            <img src="image/logo/logo.svg" width="182" height="120" alt="">
+                        </a>
+                    </div>
+                    <div class="nav-center">
+                        <form action="#" class="search-form">
+                            <input type="text" placeholder="Axtarış sahəsi">
+                            <button type="submit">
+                                <img src="image/icons/search.svg" width="20" height="20" alt="">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="nav-right">
+                        <div class="nav-tools">
+                            <div class="nav-tool favorites">
+                                <div class="tool-icon">
+                                    <img src="image/icons/heart.svg" width="20" height="20" alt="">
+                                </div>
+                                <div class="tool-title">Seçilmişlər</div>
+                            </div>
+                            <div class="nav-tool basket">
+                                <div class="tool-icon">
+                                    <img src="image/icons/basket.svg" width="20" height="20" alt="">
+                                </div>
+                                <div class="tool-title">Səbət</div>
+                            </div>
+                            <div class="nav-tool language">
+                                <div class="active-locale">
+                                    <span>az</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <div class="locale-menu">
+                                    <a href="#">en</a>
+                                    <a href="#">ru</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>Fancybox.bind('[data-fancybox]', {});</script>
+    <script src="js/swiper.js" defer></script>
+    <script src="js/script.js" defer></script>
 </body>
+
 </html>

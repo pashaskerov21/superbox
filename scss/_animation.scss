@@ -1,0 +1,6 @@
+@keyframes pulse-primary {
+    0% {box-shadow: 0 0 0 0 $primary-color;}
+    80% {box-shadow: 0 0 0 10px rgba(255, 134, 134, 0);}
+    100% {box-shadow: 0 0 0 0 rgba(255, 134, 134, 0);}
+}
+$pulse-primary: pulse-primary 1s ease infinite;

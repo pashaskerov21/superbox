@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: $primary-font;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+::selection {
+    background: $primary-color;
+    color: #ffffff;
+}
+a,
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    background-color: transparent;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    user-select: none;
+    display: block;
+}
+svg{
+    display: block;
+}
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s;
+    font-family: var(--general-font);
+}
+a{
+    transition: all 0.3s;
+    font-family: var(--general-font);
+}
+input {
+    outline: none;
+    font-family: var(--general-font);
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        display: none;
+    }
+}
+
+main{
+    width: 100%;
+    min-height: 60vh;
+}
+section{
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+}
+.swiper{
+    width: 100%;
+    z-index: 0;
+    .swiper-slide{
+        @include row-center;
+    }
+}
+
