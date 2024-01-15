@@ -11,6 +11,7 @@ header {
             @include row-between;
             gap: 10px;
             padding: 12px 0;
+            position: relative;
         }
 
         &.general-navbar {

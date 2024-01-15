@@ -4,5 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
         $('.top-alert-wrapper .close-button').click(function(){
             $('.top-alert-wrapper').hide();
         });
+
+        //mobile search
+        $('.nav-tool.mobile-search').click(function(){
+            $('.search-form.mobile').toggleClass('active');
+        })
     });
 });
