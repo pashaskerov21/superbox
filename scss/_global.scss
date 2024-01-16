@@ -91,5 +91,25 @@ section{
     .swiper-slide{
         @include row-center;
     }
+    .swiper-pagination{
+        bottom: 15px;
+        &-bullet{
+            background-color: $primary-color;
+            opacity: 1;
+            &-active{
+                background-color: #000;
+            }
+        }
+    }
+    &.product-swiper{
+        padding-bottom: 40px;
+        .swiper-pagination{
+            bottom: 0;
+        }
+    }
 }
 
+.row{
+    width: 100%;
+    margin: auto;
+}

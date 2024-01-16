@@ -15,17 +15,20 @@ header {
         }
 
         &.general-navbar {
-            .nav-left {
-                @include row-justify-start;
-            }
-
-            .nav-center {
-                @include row-center;
-                width: 100%;
-            }
-
-            .nav-right {
-                @include row-justify-end;
+            .row {
+                .nav-col{
+                    padding: 0;
+                    &.nc-left{
+                        @include row-justify-start;
+                    }
+                    &.nc-center{
+                        @include row-center;
+                        padding: 0 30px;
+                    }
+                    &.nc-right{
+                        @include row-justify-end;
+                    }
+                }
             }
         }
 
