@@ -134,6 +134,7 @@
     &.language {
         position: relative;
         cursor: pointer;
+        z-index: 800;
 
         .active-locale {
             @include row-center;
