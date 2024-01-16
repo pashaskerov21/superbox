@@ -142,6 +142,16 @@
                     flex-grow: 1;
                     @include row-justify-end;
                     cursor: pointer;
+
+                    &.active {
+                        i {
+                            transform: rotate(90deg);
+                            -webkit-transform: rotate(90deg);
+                            -moz-transform: rotate(90deg);
+                            -ms-transform: rotate(90deg);
+                            -o-transform: rotate(90deg);
+                        }
+                    }
                 }
 
                 &:hover {
@@ -158,6 +168,16 @@
 
                     .toggle-button {
                         color: #fff;
+
+                        @media (width >=992px) {
+                            i {
+                                transform: rotate(90deg);
+                                -webkit-transform: rotate(90deg);
+                                -moz-transform: rotate(90deg);
+                                -ms-transform: rotate(90deg);
+                                -o-transform: rotate(90deg);
+                            }
+                        }
                     }
                 }
             }
@@ -181,14 +201,38 @@
         padding-left: 15px;
         display: none;
         background-color: #fff;
+    }
 
-        @media (width >=992px) {
-            position: absolute;
-            top: 0;
-            left: 100%;
-            border: 1px solid #EBEBEB;
-            border-bottom: 0;
-            padding-left: 0;
+    &.secondary {
+        .categories {
+            .category {
+                .main-row {
+                    &:hover {
+                        .toggle-button {
+                            @media (width >=992px) {
+                                i {
+                                    transform: rotate(0deg);
+                                    -webkit-transform: rotate(0deg);
+                                    -moz-transform: rotate(0deg);
+                                    -ms-transform: rotate(0deg);
+                                    -o-transform: rotate(0deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .altcategories {
+            @media (width >=992px) {
+                position: absolute;
+                top: 0;
+                left: 100%;
+                border: 1px solid #EBEBEB;
+                border-bottom: 0;
+                padding-left: 0;
+            }
         }
     }
 }
@@ -230,6 +274,7 @@
         -moz-border-radius: 8px;
         -ms-border-radius: 8px;
         -o-border-radius: 8px;
+
         img {
             width: 100%;
             height: 100%;

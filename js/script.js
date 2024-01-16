@@ -5,6 +5,25 @@ document.addEventListener('DOMContentLoaded', function () {
             $('.top-alert-wrapper').hide();
         });
 
+        // header fixed
+        $(window).scroll(function(){
+            if($(window).width() < 992){
+                if($(window).scrollTop() > 300){
+                    $('.mobile-navbar').addClass('fixed-top');
+                }else{
+                    $('.mobile-navbar').removeClass('fixed-top');
+                }
+            }else{
+                if($(window).scrollTop() > 300){
+                    $('.general-navbar').addClass('fixed-top');
+                    $('.general-navbar .category-menu-button').removeClass('d-none');
+                }else{
+                    $('.general-navbar').removeClass('fixed-top');
+                    $('.general-navbar .category-menu-button').addClass('d-none');
+                }
+            }
+        })
+
         //mobile search
         $('.nav-tool.mobile-search-button').click(function(){
             $('.search-form.mobile').toggleClass('active');
@@ -13,20 +32,29 @@ document.addEventListener('DOMContentLoaded', function () {
         // mobile menu
         $('.nav-tool.mobile-menu-button').click(function(){
             $('.black-backdrop').show();
-            $('.mobile-menu').addClass('active')
+            $('.category-menu').addClass('active');
+            $('body').css('overflow','hidden');
+        });
+        $('.category-menu-button').click(function(){
+            $('.black-backdrop').show();
+            $('.category-menu').addClass('active');
+            $('body').css('overflow','hidden');
         });
         $('.nav-tool.menu-close-button').click(function(){
             $('.black-backdrop').hide();
-            $('.mobile-menu').removeClass('active')
+            $('.category-menu').removeClass('active');
+            $('body').css('overflow','visible');
         });
         $('.black-backdrop').click(function(){
             $('.black-backdrop').hide();
-            $('.mobile-menu').removeClass('active')
+            $('.category-menu').removeClass('active');
+            $('body').css('overflow','visible');
         });
 
         // category
         $('.category.has-child .toggle-button').click(function(){
             if($(window).width() < 992){
+                $(this).toggleClass('active')
                 let id = $(this).closest('.category.has-child').data('id');
                 $(`.altcategories[data-parent="${id}"]`).toggle();
             }

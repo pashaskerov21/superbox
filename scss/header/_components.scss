@@ -211,7 +211,7 @@
     display: none;
 }
 
-.mobile-menu {
+.category-menu {
     z-index: 9990;
     position: fixed;
     top: 0;
@@ -219,7 +219,7 @@
     width: 100%;
     max-width: 400px;
     height: 100vh;
-    overflow: auto;
+    overflow-y: auto;
     background-color: #ffffff;
     @include column-justify-start;
     padding: 12px;

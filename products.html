@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="top-alert-wrapper">
+        <div class="close-button"><i class="fa-solid fa-xmark"></i></div>
+        <div class="container">
+            <div class="alert-inner">
+                <div class="alert-text"><strong>Yeni il gəldi!</strong> Yeni ilə aid qutular, hədiyyə paketləri,
+                    suvenirlər <strong>SuperBox</strong> mağazasında.</div>
+                <a href="#" class="alert-button">Kampaniyaları qaçırma <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="mobile-navbar d-lg-none">
+            <div class="container">
+                <div class="nav-inner">
+                    <a href="index.html" class="logo">
+                        <img src="image/logo/logo-2.svg" width="370" height="40" alt="">
+                    </a>
+                    <div class="nav-tools">
+                        <div class="nav-tool mobile-search-button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="nav-tool mobile-menu-button">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                    <form action="#" class="search-form mobile">
+                        <input type="text" placeholder="Axtarış sahəsi">
+                        <button type="submit">
+                            <img src="image/icons/search.svg" width="20" height="20" alt="">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <nav class="general-navbar d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 nav-col nc-left">
+                        <a href="index.html" class="logo secondary">
+                            <img src="image/logo/logo.svg" width="182" height="120" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 col-xxl-7 nav-col nc-center">
+                        <div class="category-menu-button">
+                            <img src="image/icons/category.svg" width="24px" height="24px" alt="">
+                            <span>Kateqoriyalar</span>
+                        </div>
+                        <form action="#" class="search-form">
+                            <input type="text" placeholder="Axtarış sahəsi">
+                            <button type="submit">
+                                <img src="image/icons/search.svg" width="20" height="20" alt="">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-4 col-xxl-3 nav-col nc-right">
+                        <div class="nav-tools">
+                            <div class="nav-tool favorites">
+                                <div class="tool-icon">
+                                    <img src="image/icons/heart.svg" width="20" height="20" alt="">
+                                </div>
+                                <div class="tool-title">Seçilmişlər</div>
+                            </div>
+                            <div class="nav-tool basket">
+                                <div class="tool-icon">
+                                    <img src="image/icons/basket.svg" width="20" height="20" alt="">
+                                </div>
+                                <div class="tool-title">Səbət</div>
+                            </div>
+                            <div class="nav-tool language">
+                                <div class="active-locale">
+                                    <span>az</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <div class="locale-menu">
+                                    <a href="#">en</a>
+                                    <a href="#">ru</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="black-backdrop"></div>
+    <div class="category-menu">
+        <div class="menu-header">
+            <a href="#" class="logo">
+                <img src="image/logo/logo-2.svg" width="180" height="120" alt="">
+            </a>
+            <div class="nav-tool menu-close-button">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="nav-tools">
+            <div class="nav-tool favorites">
+                <div class="tool-icon">
+                    <img src="image/icons/heart.svg" width="20" height="20" alt="">
+                </div>
+                <div class="tool-title">Seçilmişlər</div>
+            </div>
+            <div class="nav-tool basket">
+                <div class="tool-icon">
+                    <img src="image/icons/basket.svg" width="20" height="20" alt="">
+                </div>
+                <div class="tool-title">Səbət</div>
+            </div>
+            <div class="nav-tool language">
+                <div class="active-locale">
+                    <span>az</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="locale-menu">
+                    <a href="#">en</a>
+                    <a href="#">ru</a>
+                </div>
+            </div>
+        </div>
+        <div class="category-container">
+            <div class="category-container-heading">Bütün kateqoriyalar</div>
+            <div class="categories">
+                <div class="category has-child" data-id="1">
+                    <div class="main-row">
+                        <a href="#">Bağlama kağızlar</a>
+                        <div class="toggle-button">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="altcategories" data-parent="1">
+                        <div class="category has-child" data-id="1-1">
+                            <div class="main-row">
+                                <a href="#">Bağlama kağızlar</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="1-1">
+                                <div class="category no-child" data-id="1-1-1">
+                                    <div class="main-row">
+                                        <a href="#">Bağlama kağızlar</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child">
+                                    <div class="main-row">
+                                        <a href="#">Bağlama kağızlar</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category has-child" data-id="1-2">
+                            <div class="main-row">
+                                <a href="#">Bağlama kağızlar</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="1-2">
+                                <div class="category no-child" data-id="1-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Bağlama kağızlar</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child" data-id="1-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Bağlama kağızlar</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category has-child" data-id="2">
+                    <div class="main-row">
+                        <a href="#">Lentlər</a>
+                        <div class="toggle-button">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="altcategories" data-parent="2">
+                        <div class="category has-child" data-id="2-1">
+                            <div class="main-row">
+                                <a href="#">Lentlər</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="2-1">
+                                <div class="category no-child" data-id="2-1-1">
+                                    <div class="main-row">
+                                        <a href="#">Lentlər</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child">
+                                    <div class="main-row">
+                                        <a href="#">Lentlər</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category has-child" data-id="2-2">
+                            <div class="main-row">
+                                <a href="#">Lentlər</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="2-2">
+                                <div class="category no-child" data-id="2-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Lentlər</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child" data-id="2-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Lentlər</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category has-child" data-id="3">
+                    <div class="main-row">
+                        <a href="#">Səbətlər</a>
+                        <div class="toggle-button">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="altcategories" data-parent="3">
+                        <div class="category has-child" data-id="3-1">
+                            <div class="main-row">
+                                <a href="#">Səbətlər</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="3-1">
+                                <div class="category no-child" data-id="3-1-1">
+                                    <div class="main-row">
+                                        <a href="#">Səbətlər</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child">
+                                    <div class="main-row">
+                                        <a href="#">Səbətlər</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category has-child" data-id="3-2">
+                            <div class="main-row">
+                                <a href="#">Səbətlər</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="3-2">
+                                <div class="category no-child" data-id="3-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Səbətlər</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child" data-id="3-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Səbətlər</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category has-child" data-id="4">
+                    <div class="main-row">
+                        <a href="#">Taxta qutular</a>
+                        <div class="toggle-button">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="altcategories" data-parent="4">
+                        <div class="category has-child" data-id="4-1">
+                            <div class="main-row">
+                                <a href="#">Taxta qutular</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="4-1">
+                                <div class="category no-child" data-id="4-1-1">
+                                    <div class="main-row">
+                                        <a href="#">Taxta qutular</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child">
+                                    <div class="main-row">
+                                        <a href="#">Taxta qutular</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category has-child" data-id="4-2">
+                            <div class="main-row">
+                                <a href="#">Taxta qutular</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="4-2">
+                                <div class="category no-child" data-id="4-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Taxta qutular</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child" data-id="4-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Taxta qutular</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category has-child" data-id="5">
+                    <div class="main-row">
+                        <a href="#">Qutular</a>
+                        <div class="toggle-button">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="altcategories" data-parent="5">
+                        <div class="category has-child" data-id="5-1">
+                            <div class="main-row">
+                                <a href="#">Qutular</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="5-1">
+                                <div class="category no-child" data-id="5-1-1">
+                                    <div class="main-row">
+                                        <a href="#">Qutular</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child">
+                                    <div class="main-row">
+                                        <a href="#">Qutular</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category has-child" data-id="5-2">
+                            <div class="main-row">
+                                <a href="#">Qutular</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="5-2">
+                                <div class="category no-child" data-id="5-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Qutular</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child" data-id="5-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Qutular</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category has-child" data-id="6">
+                    <div class="main-row">
+                        <a href="#">Hədiyyəlik paketlər</a>
+                        <div class="toggle-button">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="altcategories" data-parent="6">
+                        <div class="category has-child" data-id="6-1">
+                            <div class="main-row">
+                                <a href="#">Hədiyyəlik paketlər</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="6-1">
+                                <div class="category no-child" data-id="6-1-1">
+                                    <div class="main-row">
+                                        <a href="#">Hədiyyəlik paketlər</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child">
+                                    <div class="main-row">
+                                        <a href="#">Hədiyyəlik paketlər</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category has-child" data-id="6-2">
+                            <div class="main-row">
+                                <a href="#">Hədiyyəlik paketlər</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="6-2">
+                                <div class="category no-child" data-id="6-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Hədiyyəlik paketlər</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child" data-id="6-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Hədiyyəlik paketlər</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category has-child" data-id="7">
+                    <div class="main-row">
+                        <a href="#">Güllər</a>
+                        <div class="toggle-button">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="altcategories" data-parent="7">
+                        <div class="category has-child" data-id="7-1">
+                            <div class="main-row">
+                                <a href="#">Güllər</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="7-1">
+                                <div class="category no-child" data-id="7-1-1">
+                                    <div class="main-row">
+                                        <a href="#">Güllər</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child">
+                                    <div class="main-row">
+                                        <a href="#">Güllər</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category has-child" data-id="7-2">
+                            <div class="main-row">
+                                <a href="#">Güllər</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="7-2">
+                                <div class="category no-child" data-id="7-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Güllər</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child" data-id="7-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Güllər</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category has-child" data-id="8">
+                    <div class="main-row">
+                        <a href="#">Dekorativ əşyalar</a>
+                        <div class="toggle-button">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="altcategories" data-parent="8">
+                        <div class="category has-child" data-id="8-1">
+                            <div class="main-row">
+                                <a href="#">Dekorativ əşyalar</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="8-1">
+                                <div class="category no-child" data-id="8-1-1">
+                                    <div class="main-row">
+                                        <a href="#">Dekorativ əşyalar</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child">
+                                    <div class="main-row">
+                                        <a href="#">Dekorativ əşyalar</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category has-child" data-id="8-2">
+                            <div class="main-row">
+                                <a href="#">Dekorativ əşyalar</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="8-2">
+                                <div class="category no-child" data-id="8-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Dekorativ əşyalar</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child" data-id="8-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Dekorativ əşyalar</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category has-child" data-id="9">
+                    <div class="main-row">
+                        <a href="#">Digərləri</a>
+                        <div class="toggle-button">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="altcategories" data-parent="9">
+                        <div class="category has-child" data-id="9-1">
+                            <div class="main-row">
+                                <a href="#">Digərləri</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="9-1">
+                                <div class="category no-child" data-id="9-1-1">
+                                    <div class="main-row">
+                                        <a href="#">Digərləri</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child">
+                                    <div class="main-row">
+                                        <a href="#">Digərləri</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category has-child" data-id="9-2">
+                            <div class="main-row">
+                                <a href="#">Digərləri</a>
+                                <div class="toggle-button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="altcategories" data-parent="9-2">
+                                <div class="category no-child" data-id="9-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Digərləri</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category no-child" data-id="9-2-1">
+                                    <div class="main-row">
+                                        <a href="#">Digərləri</a>
+                                        <div class="toggle-button">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main></main>
+
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="top-inner">
+                    <div class="footer-links">
+                        <a href="#">Haqqımızda</a>
+                        <a href="#">Ünvanımız</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#">İstifadəçi şərtləri</a>
+                        <a href="#">Məxfilik siyasəti</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#">Çatdırılma və ödəmə</a>
+                        <a href="#">Çox verilən suallar</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#"><b>info@superbox.az</b></a>
+                        <a href="#"><b>+994 55 333 44 55</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="bottom-inner">
+                    <div class="bottom-left">
+                        <a href="#" class="logo">
+                            <img src="image/logo/logo-2.svg" width="180" height="120" alt="">
+                        </a>
+                    </div>
+                    <div class="bottom-center">
+                        <div class="copyright">
+                            2023 Bütün hüquqlar qorunur.
+                        </div>
+                    </div>
+                    <div class="bottom-right">
+                        <div class="social-icons">
+                            <a href="#"><img src="image/icons/instagram.svg" width="24" height="24" alt=""></a>
+                            <a href="#"><img src="image/icons/linkedin.svg" width="24" height="24" alt=""></a>
+                            <a href="#"><img src="image/icons/facebook.svg" width="24" height="24" alt=""></a>
+                            <a href="#"><img src="image/icons/youtube.svg" width="24" height="24" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>Fancybox.bind('[data-fancybox]', {});</script>
+    <script src="js/swiper.js" defer></script>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
