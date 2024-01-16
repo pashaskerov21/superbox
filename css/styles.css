@@ -1087,6 +1087,10 @@ section.banner-section .static-banners a img {
   width: 100%;
   max-width: 200px;
   height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .services-section .service-item .service-icon img {
   width: 100%;

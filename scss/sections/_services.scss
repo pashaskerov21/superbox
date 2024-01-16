@@ -1,35 +1,45 @@
-.services-section{
+.services-section {
     padding: 40px 0;
-    .col-12{
+
+    .col-12 {
         margin-bottom: 40px;
-        &:last-child{
+
+        &:last-child {
             border: none !important;
             margin-bottom: 0;
         }
-        @media (width >= 992px){
+
+        @media (width >=992px) {
             padding: 40px 0;
             border-right: 2px solid $black-2;
             margin-bottom: 0;
         }
     }
-    .service-item{
+
+    .service-item {
         width: 100%;
         @include column-center;
         gap: 15px;
-        .service-icon{
+
+        .service-icon {
             width: 100%;
             max-width: 200px;
             height: 200px;
-            img{
+            @include row-center;
+
+            img {
                 width: 100%;
                 height: auto;
                 object-fit: contain;
+
             }
         }
-        .service-title{
+
+        .service-title {
             font-size: 18px;
             font-weight: 500;
-            @media (width >= 992px){
+
+            @media (width >=992px) {
                 font-size: 22px;
             }
         }
