@@ -30,7 +30,7 @@
 
     &.mobile {
         position: absolute;
-        top: 100%;
+        top: calc(100% + 40px);
         right: 0;
         max-width: 100%;
         width: 0;
