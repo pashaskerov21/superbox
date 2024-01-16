@@ -1,0 +1,34 @@
+.services-section{
+    padding: 40px 0;
+    .col-12{
+        &:last-child{
+            border: none !important;
+        }
+        @media (width >= 992px){
+            padding: 40px 0;
+            border-right: 2px solid $black-2;
+        }
+    }
+    .service-item{
+        width: 100%;
+        @include column-center;
+        gap: 15px;
+        .service-icon{
+            width: 100%;
+            max-width: 200px;
+            height: 200px;
+            img{
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+        .service-title{
+            font-size: 18px;
+            font-weight: 500;
+            @media (width >= 992px){
+                font-size: 22px;
+            }
+        }
+    }
+}
