@@ -77,19 +77,65 @@ document.addEventListener('DOMContentLoaded', function () {
             if ($(this).find('i').hasClass('fa-regular')) {
                 $(this).find('i').removeClass('fa-regular');
                 $(this).find('i').addClass('fa-solid');
+                $(this).addClass('active');
             } else {
                 $(this).find('i').removeClass('fa-solid');
                 $(this).find('i').addClass('fa-regular');
+                $(this).removeClass('active');
             }
         });
+
+        $('.product-button.basket').click(function(){
+            $(this).addClass('active');
+        })
 
         // product image height
         function setProductCartHeight() {
             let cartWidth = $('.product-card .product-image').innerWidth();
             $('.product-card .product-image').css('height', cartWidth + 'px');
+
+            let productMainImage = $('.product-main-image').innerHeight();
+            let productSmallImages = $('.product-small-images');
+            if($(window).width() > 768){
+                productSmallImages.css('height', productMainImage + 'px');
+            }
         }
         $(window).on('load resize', function () {
             setProductCartHeight();
+        });
+
+        // product detail image
+        $('.product-main-image img').removeClass('active');
+        $('.product-main-image img').eq(0).addClass('active');
+
+        $('.product-small-images img').click(function(){
+            let id = $(this).data('id');
+            $('.product-small-images img').removeClass('active');
+            $(this).addClass('active');
+            $('.product-main-image img').removeClass('active');
+            $(`.product-main-image img[data-id="${id}"]`).addClass('active');
+        });
+
+        // product amount
+        $('.amount-row .amount-button.decrement').click(function(){
+            let input = $('.amount-row input');
+            let value = parseInt(input.val());
+            if (isNaN(value)) {
+                value = 1;
+            }
+            if (value !== 1) {
+                value -= 1;
+            }
+            input.val(value);
+        });
+        $('.amount-row .amount-button.increment').click(function(){
+            let input = $('.amount-row input');
+            let value = parseInt(input.val());
+            if (isNaN(value)) {
+                value = 0;
+            }
+            value += 1;
+            input.val(value);
         });
 
         // price filter

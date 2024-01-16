@@ -708,7 +708,7 @@
 
 
     <main>
-        <section class="general-products-section">
+        <section class="product-detail-section">
             <div class="container">
                 <div class="page-heading">
                     <div class="breadcrumbs">
@@ -717,627 +717,374 @@
                         <a href="#">Kateqoriya adı</a>
                         <i class="fa-solid fa-chevron-right"></i>
                         <a href="#">Alt kateqoriyası</a>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <a href="#">Məhsulun adı</a>
                     </div>
-                    <h1 class="page-title">
-                        Taxta qutular
-                    </h1>
                 </div>
 
-                <div class="general-products-wrapper">
-                    <div class="filter-show-button d-lg-none">
-                        <i class="fa-solid fa-filter"></i>
-                        <span>Filterlər</span>
+                <div class="product-detail-wrapper">
+                    <div class="product-detail-image">
+                        <div class="product-main-image">
+                            <img src="image/product/image-3.svg" width="610" height="610" alt="" data-id="1">
+                            <img src="image/product/image-3.svg" width="610" height="610" alt="" data-id="2">
+                            <img src="image/product/image-3.svg" width="610" height="610" alt="" data-id="3">
+                            <img src="image/product/image-3.svg" width="610" height="610" alt="" data-id="4">
+                            <img src="image/product/image-3.svg" width="610" height="610" alt="" data-id="5">
+                            <img src="image/product/image-3.svg" width="610" height="610" alt="" data-id="6">
+                            <img src="image/product/image-3.svg" width="610" height="610" alt="" data-id="7">
+                        </div>
+                        <div class="product-small-images">
+                            <img src="image/product/image-2.svg" width="96" height="96" alt="" data-id="1">
+                            <img src="image/product/image-2.svg" width="96" height="96" alt="" data-id="2">
+                            <img src="image/product/image-2.svg" width="96" height="96" alt="" data-id="3">
+                            <img src="image/product/image-2.svg" width="96" height="96" alt="" data-id="4">
+                            <img src="image/product/image-2.svg" width="96" height="96" alt="" data-id="5">
+                            <img src="image/product/image-2.svg" width="96" height="96" alt="" data-id="6">
+                            <img src="image/product/image-2.svg" width="96" height="96" alt="" data-id="7">
+                        </div>
                     </div>
-                    <div class="wrapper-left">
-                        <form action="#" class="product-left-filters">
-                            <div class="product-filters-title">Filter bölməsi:</div>
-                            <div class="filter-component">
-                                <div class="filter-component-title">Qiymət aralığı</div>
-                                <div class="price-filter">
-                                    <div class="input-row">
-                                        <input type="number" placeholder="min">
-                                        <span>-</span>
-                                        <input type="number" placeholder="max">
-                                    </div>
-                                    <div class="range-row">
-                                        <input type="range" min="0" max="500" value="0">
-                                        <input type="range" min="0" max="500" value="500">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter-component">
-                                <div class="filter-component-title">Rənglər</div>
-                                <div class="filter-checkboxes">
-                                    <div class="checkbox-component">
-                                        <input type="checkbox" id="color-check-1" />
-                                        <div class="custom-check">
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <label for="color-check-1">Qırmızı</label>
-                                    </div>
-                                    <div class="checkbox-component">
-                                        <input type="checkbox" id="color-check-2" />
-                                        <div class="custom-check">
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <label for="color-check-2">Qara</label>
-                                    </div>
-                                    <div class="checkbox-component">
-                                        <input type="checkbox" id="color-check-3" />
-                                        <div class="custom-check">
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <label for="color-check-3">Kraft</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter-component">
-                                <div class="filter-component-title">Materialı</div>
-                                <div class="filter-checkboxes">
-                                    <div class="checkbox-component">
-                                        <input type="checkbox" id="material-check-1" />
-                                        <div class="custom-check">
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <label for="material-check-1">Taxta</label>
-                                    </div>
-                                    <div class="checkbox-component">
-                                        <input type="checkbox" id="material-check-2" />
-                                        <div class="custom-check">
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <label for="material-check-2">Karton</label>
-                                    </div>
-                                    <div class="checkbox-component">
-                                        <input type="checkbox" id="material-check-3" />
-                                        <div class="custom-check">
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <label for="material-check-3">Plastik</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter-form-buttons">
-                                <button type="submit" class="submit-button">Təsdiqlə</button>
-                                <button type="reset" class="reset-button">Sıfırla</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="wrapper-right">
-                        <div class="product-sort-filters">
-                            <div class="psf-title">Sıralama: </div>
-                            <div class="psf-buttons">
-                                <a href="#" class="sort-filter active">Son gələnlər</a>
-                                <a href="#" class="sort-filter">Stok koda görə</a>
-                                <a href="#" class="sort-filter">Ucuzdan bahaya</a>
-                                <a href="#" class="sort-filter">Bahadan ucuza</a>
+                    <div class="product-detail-content">
+                        <div class="product-title">Məhsulun adı burada olacaq</div>
+                        <div class="product-code">
+                            <div class="label">Məhsul kodu:</div>
+                            <div class="code">024654</div>
+                        </div>
+                        <div class="product-price-color">
+                            <div class="product-price">35 AZN</div>
+                            <div class="product-colors">
+                                <a href="#" class="color-button active">
+                                    <span class="value">Qırmızı</span>
+                                    <span class="icon"><i class="fa-solid fa-check"></i></span>
+                                </a>
+                                <a href="#" class="color-button">
+                                    <span class="value">Qara</span>
+                                    <span class="icon"><i class="fa-solid fa-check"></i></span>
+                                </a>
+                                <a href="#" class="color-button">
+                                    <span class="value">Kraft</span>
+                                    <span class="icon"><i class="fa-solid fa-check"></i></span>
+                                </a>
                             </div>
                         </div>
-                        <div class="products-grid">
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
+                        <div class="product-parameters">
+                            <div class="parameter"><b>Materialı:</b> Karton</div>
+                            <div class="parameter"><b>Ölçüləri:</b> 35x23x45 mm</div>
+                            <div class="parameter"><b>Rəngi:</b> Qırmızı</div>
+                        </div>
+                        <div class="product-amount-buttons">
+                            <div class="product-amount-wrapper">
+                                <div class="label">Ədəd:</div>
+                                <div class="amount-row">
+                                    <div class="amount-button decrement">-</div>
+                                    <input type="number" value="1">
+                                    <div class="amount-button increment">+</div>
                                 </div>
                             </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
+                            <div class="product-buttons">
+                                <div class="product-button basket">
+                                    <span>Sifarişə əlavə et</span>
+                                    <i class="fa-solid fa-shopping-cart"></i>
                                 </div>
+                                <a href="#" class="product-button buy-now">Bir kliklə al</a>
                             </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                        <div class="favorite-button">
+                            <i class="fa-regular fa-heart"></i>
+                            <span>Seçilmişlərə əlavə et</span>
+                        </div>
+                    </div>
+                </div>
 
-                            <!-- support banner -->
-                            <div class="product-support-banner">
-                                <div class="support-container">
-                                    <div class="support-content">
-                                        <div class="content-title">
-                                            Məhsul seçimində dəstək lazımdır?
-                                        </div>
-                                        <div class="content-text">
-                                            Məhsulların Seçimində Sizə yarım etməyə hazırıq.
-                                            Əlaqə nömrənizi qeyd edin, əməkdaşlarımız Sizinlə əlaqə saxlayacaq
-                                        </div>
-                                        <a href="#" class="content-button">Müraciət et</a>
-                                    </div>
-                                    <div class="support-design">
-                                        <div class="circle small"></div>
-                                        <img src="image/support.svg" alt="">
-                                        <div class="circle large"></div>
-                                    </div>
-                                </div>
+                <!-- support banner -->
+                <div class="product-support-banner">
+                    <div class="support-container">
+                        <div class="support-content">
+                            <div class="content-title">
+                                Məhsul seçimində dəstək lazımdır?
                             </div>
-                            <!-- support banner -->
-
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="content-text">
+                                Məhsulların Seçimində Sizə yarım etməyə hazırıq.
+                                Əlaqə nömrənizi qeyd edin, əməkdaşlarımız Sizinlə əlaqə saxlayacaq
                             </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <a href="#" class="product-image">
-                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
-                                </a>
-                                <div class="info">
-                                    <div class="stock-code">
-                                        <div class="stock">Anbarda var</div>
-                                        <div class="code">0125125</div>
-                                    </div>
-                                    <a href="#" class="product-title">
-                                        Taxta qutu 70 sm / 140 sm
-                                    </a>
-                                    <div class="product-price">
-                                        <div class="main-price">25 AZN</div>
-                                        <div class="old-price">32 AZN</div>
-                                    </div>
-                                    <div class="product-buttons">
-                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
-                                        <div class="favorite-button">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="#" class="content-button">Müraciət et</a>
                         </div>
-                        <div class="product-pagination">
-                            <a href="#" class="pagination-button prev disabled">
-                                <i class="fa-solid fa-chevron-left"></i>
-                                <span>Əvvəlki</span>
-                            </a>
-                            <div class="page-numbers">
-                                <a href="#" class="active">1</a>
-                                <a href="#">2</a>
-                                <a href="#">3</a>
-                                <a href="#">4</a>
-                                <a href="#">5</a>
-                                <a href="#">6</a>
-                                <a href="#">7</a>
-                            </div>
-                            <a href="#" class="pagination-button next">
-                                <span>Sonrakı</span>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
+                        <div class="support-design">
+                            <div class="circle small"></div>
+                            <img src="image/support.svg" alt="">
+                            <div class="circle large"></div>
                         </div>
                     </div>
+                </div>
+                <!-- support banner -->
+            </div>
+        </section>
+        <section class="products-section">
+            <div class="container">
+                <h1 class="section-title secondary">Bənzər məhsullar</h1>
+                <div class="swiper product-swiper product-swiper-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <a href="#" class="product-image">
+                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
+                                </a>
+                                <div class="info">
+                                    <div class="stock-code">
+                                        <div class="stock">Anbarda var</div>
+                                        <div class="code">0125125</div>
+                                    </div>
+                                    <a href="#" class="product-title">
+                                        Taxta qutu 70 sm / 140 sm
+                                    </a>
+                                    <div class="product-price">
+                                        <div class="main-price">25 AZN</div>
+                                        <div class="old-price">32 AZN</div>
+                                    </div>
+                                    <div class="product-buttons">
+                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
+                                        <div class="favorite-button">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <a href="#" class="product-image">
+                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
+                                </a>
+                                <div class="info">
+                                    <div class="stock-code">
+                                        <div class="stock">Anbarda var</div>
+                                        <div class="code">0125125</div>
+                                    </div>
+                                    <a href="#" class="product-title">
+                                        Taxta qutu 70 sm / 140 sm
+                                    </a>
+                                    <div class="product-price">
+                                        <div class="main-price">25 AZN</div>
+                                        <div class="old-price">32 AZN</div>
+                                    </div>
+                                    <div class="product-buttons">
+                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
+                                        <div class="favorite-button">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <a href="#" class="product-image">
+                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
+                                </a>
+                                <div class="info">
+                                    <div class="stock-code">
+                                        <div class="stock">Anbarda var</div>
+                                        <div class="code">0125125</div>
+                                    </div>
+                                    <a href="#" class="product-title">
+                                        Taxta qutu 70 sm / 140 sm
+                                    </a>
+                                    <div class="product-price">
+                                        <div class="main-price">25 AZN</div>
+                                        <div class="old-price">32 AZN</div>
+                                    </div>
+                                    <div class="product-buttons">
+                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
+                                        <div class="favorite-button">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <a href="#" class="product-image">
+                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
+                                </a>
+                                <div class="info">
+                                    <div class="stock-code">
+                                        <div class="stock">Anbarda var</div>
+                                        <div class="code">0125125</div>
+                                    </div>
+                                    <a href="#" class="product-title">
+                                        Taxta qutu 70 sm / 140 sm
+                                    </a>
+                                    <div class="product-price">
+                                        <div class="main-price">25 AZN</div>
+                                        <div class="old-price">32 AZN</div>
+                                    </div>
+                                    <div class="product-buttons">
+                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
+                                        <div class="favorite-button">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <a href="#" class="product-image">
+                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
+                                </a>
+                                <div class="info">
+                                    <div class="stock-code">
+                                        <div class="stock">Anbarda var</div>
+                                        <div class="code">0125125</div>
+                                    </div>
+                                    <a href="#" class="product-title">
+                                        Taxta qutu 70 sm / 140 sm
+                                    </a>
+                                    <div class="product-price">
+                                        <div class="main-price">25 AZN</div>
+                                        <div class="old-price">32 AZN</div>
+                                    </div>
+                                    <div class="product-buttons">
+                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
+                                        <div class="favorite-button">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <a href="#" class="product-image">
+                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
+                                </a>
+                                <div class="info">
+                                    <div class="stock-code">
+                                        <div class="stock">Anbarda var</div>
+                                        <div class="code">0125125</div>
+                                    </div>
+                                    <a href="#" class="product-title">
+                                        Taxta qutu 70 sm / 140 sm
+                                    </a>
+                                    <div class="product-price">
+                                        <div class="main-price">25 AZN</div>
+                                        <div class="old-price">32 AZN</div>
+                                    </div>
+                                    <div class="product-buttons">
+                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
+                                        <div class="favorite-button">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <a href="#" class="product-image">
+                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
+                                </a>
+                                <div class="info">
+                                    <div class="stock-code">
+                                        <div class="stock">Anbarda var</div>
+                                        <div class="code">0125125</div>
+                                    </div>
+                                    <a href="#" class="product-title">
+                                        Taxta qutu 70 sm / 140 sm
+                                    </a>
+                                    <div class="product-price">
+                                        <div class="main-price">25 AZN</div>
+                                        <div class="old-price">32 AZN</div>
+                                    </div>
+                                    <div class="product-buttons">
+                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
+                                        <div class="favorite-button">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <a href="#" class="product-image">
+                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
+                                </a>
+                                <div class="info">
+                                    <div class="stock-code">
+                                        <div class="stock">Anbarda var</div>
+                                        <div class="code">0125125</div>
+                                    </div>
+                                    <a href="#" class="product-title">
+                                        Taxta qutu 70 sm / 140 sm
+                                    </a>
+                                    <div class="product-price">
+                                        <div class="main-price">25 AZN</div>
+                                        <div class="old-price">32 AZN</div>
+                                    </div>
+                                    <div class="product-buttons">
+                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
+                                        <div class="favorite-button">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <a href="#" class="product-image">
+                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
+                                </a>
+                                <div class="info">
+                                    <div class="stock-code">
+                                        <div class="stock">Anbarda var</div>
+                                        <div class="code">0125125</div>
+                                    </div>
+                                    <a href="#" class="product-title">
+                                        Taxta qutu 70 sm / 140 sm
+                                    </a>
+                                    <div class="product-price">
+                                        <div class="main-price">25 AZN</div>
+                                        <div class="old-price">32 AZN</div>
+                                    </div>
+                                    <div class="product-buttons">
+                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
+                                        <div class="favorite-button">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <a href="#" class="product-image">
+                                    <img src="image/product/image-1.svg" width="260" height="260" alt="">
+                                </a>
+                                <div class="info">
+                                    <div class="stock-code">
+                                        <div class="stock">Anbarda var</div>
+                                        <div class="code">0125125</div>
+                                    </div>
+                                    <a href="#" class="product-title">
+                                        Taxta qutu 70 sm / 140 sm
+                                    </a>
+                                    <div class="product-price">
+                                        <div class="main-price">25 AZN</div>
+                                        <div class="old-price">32 AZN</div>
+                                    </div>
+                                    <div class="product-buttons">
+                                        <a href="#" class="basket-button">Sifarişə əlavə et</a>
+                                        <div class="favorite-button">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>

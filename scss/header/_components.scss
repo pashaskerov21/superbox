@@ -106,6 +106,31 @@
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
+    position: relative;
+
+    span.value {
+        position: absolute;
+        top: -10px;
+        right: -3px;
+        min-width: 20px;
+        min-height: 20px;
+        max-width: 20px;
+        max-height: 20px;
+        overflow: hidden;
+        padding: 5px;
+        font-size: 10px;
+        font-weight: 600;
+        font-family: Inter;
+        font-style: normal;
+        @include row-center;
+        background-color: $primary-color;
+        color: #fff;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
 
     .tool-title {
         color: #000;
