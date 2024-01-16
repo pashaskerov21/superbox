@@ -387,6 +387,7 @@
 
                 &.disabled{
                     color: #9F9F9F;
+                    pointer-events: none;
                     &:hover{
                         color: #9F9F9F;
                         cursor: not-allowed;

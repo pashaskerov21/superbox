@@ -1780,6 +1780,7 @@ section.banner-section .static-banners a img {
 }
 .general-products-section .general-products-wrapper .product-pagination .pagination-button.disabled {
   color: #9F9F9F;
+  pointer-events: none;
 }
 .general-products-section .general-products-wrapper .product-pagination .pagination-button.disabled:hover {
   color: #9F9F9F;
