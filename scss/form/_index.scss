@@ -1,0 +1,48 @@
+.checkbox-component {
+    width: 100%;
+    @include row-justify-start;
+    gap: 10px;
+
+    .custom-check {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #475569;
+        background: #F2F3F5;
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+        @include row-center;
+        font-size: 14px;
+
+        i {
+            display: none;
+        }
+    }
+
+    input {
+        &:checked {
+            &~.custom-check {
+                border-color: $primary-color;
+                background-color: $primary-color;
+                color: #fff;
+
+                i {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    label {
+        color: #475569;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+        user-select: none;
+    }
+}

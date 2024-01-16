@@ -268,6 +268,7 @@
 
     .product-image {
         width: 100%;
+        max-width: 260px;
         max-height: 260px;
         border-radius: 8px;
         -webkit-border-radius: 8px;
@@ -379,6 +380,120 @@
                 font-size: 24px;
                 color: $primary-color;
                 cursor: pointer;
+            }
+        }
+    }
+}
+
+
+.page-heading {
+    width: 100%;
+    @include column-align-start;
+    padding: 20px 0;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    @media (width >=992px) {
+        padding: 40px 0;
+    }
+
+    .breadcrumbs {
+        width: 100%;
+        @include row-justify-start;
+        flex-wrap: wrap;
+        gap: 7px;
+
+        a {
+            color: #004EC3;
+            font-family: Inter;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &:last-child {
+                color: #73787D;
+            }
+        }
+
+        i {
+            color: #73787D;
+            font-size: 12px;
+        }
+    }
+
+    .page-title {
+        color: #000;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+
+.price-filter {
+    width: 100%;
+    @include column-center;
+    padding: 12px 0;
+    gap: 15px;
+
+    .input-row {
+        width: 100%;
+        @include row-between;
+
+        input {
+            width: 45%;
+            height: 30px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 17px;
+            border: 1px solid #475569;
+            background: #F2F3F5;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+        }
+    }
+
+    .range-row {
+        width: 100%;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            transform: translateY(-50%);
+            background-color: $primary-color;
+            z-index: 1;
+            border-radius: 10px;
+        }
+
+        input {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            transform: translateY(-50%);
+            appearance: none;
+            pointer-events: none;
+            background-color: transparent;
+            z-index: 5;
+
+            &::-webkit-slider-thumb {
+                appearance: none;
+                -webkit-appearance: none;
+                pointer-events: auto;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: $primary-color;
             }
         }
     }
