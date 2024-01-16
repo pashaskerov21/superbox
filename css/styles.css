@@ -658,6 +658,7 @@ section {
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
+  position: relative;
 }
 .checkbox-component .custom-check {
   width: 20px;
@@ -677,6 +678,14 @@ section {
 }
 .checkbox-component .custom-check i {
   display: none;
+}
+.checkbox-component input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
 .checkbox-component input:checked ~ .custom-check {
   border-color: #ED2027;
