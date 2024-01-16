@@ -1061,13 +1061,18 @@ section.banner-section .static-banners a img {
 .services-section {
   padding: 40px 0;
 }
+.services-section .col-12 {
+  margin-bottom: 40px;
+}
 .services-section .col-12:last-child {
   border: none !important;
+  margin-bottom: 0;
 }
 @media (width >= 992px) {
   .services-section .col-12 {
     padding: 40px 0;
     border-right: 2px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 0;
   }
 }
 .services-section .service-item {
