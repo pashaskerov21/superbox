@@ -74,15 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // product favorite button
         $('.favorite-button').click(function () {
-            if ($(this).find('i').hasClass('fa-regular')) {
-                $(this).find('i').removeClass('fa-regular');
-                $(this).find('i').addClass('fa-solid');
-                $(this).addClass('active');
-            } else {
-                $(this).find('i').removeClass('fa-solid');
-                $(this).find('i').addClass('fa-regular');
-                $(this).removeClass('active');
-            }
+            $(this).toggleClass('active')
         });
 
         $('.product-button.basket').click(function(){

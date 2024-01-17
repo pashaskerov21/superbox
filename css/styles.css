@@ -533,6 +533,18 @@ section {
   color: #ED2027;
   cursor: pointer;
 }
+.product-card .info .product-buttons .favorite-button .fa-regular {
+  display: block;
+}
+.product-card .info .product-buttons .favorite-button .fa-solid {
+  display: none;
+}
+.product-card .info .product-buttons .favorite-button.active .fa-regular {
+  display: none;
+}
+.product-card .info .product-buttons .favorite-button.active .fa-solid {
+  display: block;
+}
 
 .page-heading {
   width: 100%;
@@ -649,6 +661,34 @@ section {
   height: 10px;
   border-radius: 50%;
   background-color: #ED2027;
+}
+
+.products-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  place-items: center;
+}
+@media (width >= 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (width >= 992px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (width >= 1400px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (width >= 1600px) {
+  .products-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 .checkbox-component {
@@ -1587,11 +1627,9 @@ section.banner-section .static-banners a img {
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
+  gap: 30px;
 }
-.general-products-section .general-products-wrapper .products-grid .product-card {
-  margin-bottom: 30px;
-}
-@media (width >= 576px) {
+@media (width >= 768px) {
   .general-products-section .general-products-wrapper .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1795,6 +1833,11 @@ section.banner-section .static-banners a img {
 @media (width >= 768px) {
   .product-support-banner .support-container .support-design {
     width: 50%;
+  }
+}
+@media (width >= 1400px) {
+  .product-support-banner .support-container .support-design {
+    width: 45%;
   }
 }
 .product-support-banner .support-container .support-design .circle {
@@ -2158,4 +2201,16 @@ section.banner-section .static-banners a img {
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
+}
+.product-detail-wrapper .product-detail-content .favorite-button .fa-regular {
+  display: block;
+}
+.product-detail-wrapper .product-detail-content .favorite-button .fa-solid {
+  display: none;
+}
+.product-detail-wrapper .product-detail-content .favorite-button.active .fa-regular {
+  display: none;
+}
+.product-detail-wrapper .product-detail-content .favorite-button.active .fa-solid {
+  display: block;
 }/*# sourceMappingURL=styles.css.map */

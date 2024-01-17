@@ -176,12 +176,9 @@
             display: grid;
             grid-template-columns: 1fr;
             place-items: center;
+            gap: 30px;
 
-            .product-card {
-                margin-bottom: 30px;
-            }
-
-            @media (width >=576px) {
+            @media (width >=768px) {
                 grid-template-columns: repeat(2, 1fr);
 
                 .product-support-banner {
@@ -371,6 +368,9 @@
 
             @media (width >=768px) {
                 width: 50%;
+            }
+            @media (width >= 1400px){
+                width: 45%;
             }
 
             .circle {
@@ -711,6 +711,20 @@
             font-style: normal;
             font-weight: 500;
             line-height: 22px;
+            .fa-regular{
+                display: block;
+            }
+            .fa-solid{
+                display: none;
+            }
+            &.active{
+                .fa-regular{
+                    display: none;
+                }
+                .fa-solid{
+                    display: block;
+                }
+            }
         }
     }
 }
