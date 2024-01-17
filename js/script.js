@@ -109,8 +109,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         // product amount
-        $('.amount-row .amount-button.decrement').click(function(){
-            let input = $('.amount-row input');
+        $('.product-amount .amount-button.decrement').click(function(){
+            let input = $(this).parent('.product-amount').find('input');
             let value = parseInt(input.val());
             if (isNaN(value)) {
                 value = 1;
@@ -120,8 +120,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             input.val(value);
         });
-        $('.amount-row .amount-button.increment').click(function(){
-            let input = $('.amount-row input');
+        $('.product-amount .amount-button.increment').click(function(){
+            let input = $(this).parent('.product-amount').find('input');
             let value = parseInt(input.val());
             if (isNaN(value)) {
                 value = 0;

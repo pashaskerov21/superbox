@@ -405,10 +405,9 @@
     @include column-align-start;
     padding: 20px 0;
     gap: 20px;
-    margin-bottom: 20px;
 
     @media (width >=992px) {
-        padding: 40px 0;
+        padding-top: 40px;
     }
 
     .breadcrumbs {
@@ -531,5 +530,38 @@
     }
     @media (width >= 1600px){
         grid-template-columns: repeat(5,1fr);
+    }
+}
+
+
+.product-amount {
+    @include row-center;
+    gap: 10px;
+
+    .amount-button {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: #F8F8F8;
+        border: 1px solid #BFC6CC;
+        @include row-center;
+        color: #333E48;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        text-align: center;
+        width: 30px;
     }
 }

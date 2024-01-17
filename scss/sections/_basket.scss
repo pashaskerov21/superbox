@@ -1,0 +1,176 @@
+.basket-table-wrapper {
+    width: 100%;
+    @include row-justify-start;
+    overflow: auto;
+    padding-bottom: 30px;
+
+    table {
+        width: 100%;
+        min-width: 1200px;
+        border-collapse: collapse;
+
+        tr {
+            border: none;
+            border-bottom: 1px solid #C6C6C6;
+        }
+
+        td,
+        th {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        th {
+            color: #838383;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+
+        .image-td {
+            width: 200px;
+
+            .product-image {
+                width: 100%;
+
+                @include row-center;
+
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .product-info {
+            width: 100%;
+            @include column-center;
+            padding: 0 10px;
+
+            .product-title {
+                color: #000;
+                font-weight: 500;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .product-code {
+                color: #73787D;
+            }
+        }
+
+        .product-color {
+            width: 100%;
+            @include row-center;
+
+            .color {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid #73787D;
+                @include row-center;
+
+                span {
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .product-price {
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .delete-button {
+            color: $primary-color;
+            cursor: pointer;
+
+            &:hover {
+                color: #000;
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+.basket-bottom {
+    width: 100%;
+    @include column-center;
+
+    .basket-result {
+        width: 100%;
+        padding: 25px 0;
+        @include column-align-end;
+        gap: 15px;
+        overflow: auto;
+        max-width: 100%;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #C6C6C6;
+
+        .result-line {
+            @include row-justify-end;
+            font-size: 18px;
+            width: 100%;
+            @include row-between;
+
+            @media (min-width: 576px) {
+                max-width: 500px;
+            }
+
+            .label {
+                min-width: 125px;
+                font-weight: 500;
+                text-transform: capitalize;
+                margin-right: 20px;
+
+                @media (min-width: 576px) {
+                    text-align: end;
+                }
+            }
+
+            .value {
+                text-align: end;
+            }
+
+            &:last-child {
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .basket-confirm {
+        width: 100%;
+        padding: 25px 0;
+        @include row-justify-end;
+
+        .confirm-button {
+            width: 100%;
+            max-width: 310px;
+            min-height: 60px;
+            padding: 15px;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            background-color: $primary-color;
+            color: #fff;
+            font-weight: 600;
+            font-size: 18px;
+            @include row-center;
+            &:hover{
+                animation: $pulse-primary;
+                -webkit-animation: $pulse-primary;
+}
+        }
+    }
+}
