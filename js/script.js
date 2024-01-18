@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 if ($(window).scrollTop() > 300) {
                     $('.general-navbar').addClass('fixed-nav');
-                    $('.general-navbar.home .category-menu-button').removeClass('d-none');
+                    $('.general-navbar.home .general-categories-wrapper').removeClass('d-none');
                 } else {
                     $('.general-navbar').removeClass('fixed-nav');
-                    $('.general-navbar.home .category-menu-button').addClass('d-none');
+                    $('.general-navbar.home .general-categories-wrapper').addClass('d-none');
                 }
             }
         })
