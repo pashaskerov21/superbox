@@ -7,7 +7,7 @@
         "item-2"
         "item-3";
 
-    @media (width >=768px) {
+    @media (width >=576px) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
             "item-1 item-2"
@@ -17,6 +17,7 @@
     .image-item {
         display: block;
         width: 100%;
+        height: auto;
 
         &:nth-child(1) {
             grid-area: item-1;

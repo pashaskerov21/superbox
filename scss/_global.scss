@@ -12,6 +12,9 @@ body{
     font-size: 16px;
     font-family: $primary-font;
     scroll-behavior: smooth;
+    &.locked{
+        overflow: hidden;
+    }
 }
 ::-webkit-scrollbar {
     width: 7px;
@@ -111,5 +114,5 @@ section{
 
 .row{
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
 }

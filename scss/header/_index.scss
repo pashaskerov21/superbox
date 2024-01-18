@@ -6,58 +6,49 @@ header {
         width: 100%;
         position: relative;
         background-color: #fff;
-
-        &.fixed-top {
+        &.fixed-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
             box-shadow: 0 0 10px $black-2;
             animation: $fixnav-animation;
             -webkit-animation: $fixnav-animation;
-        }
-
-        .nav-inner {
-            width: 100%;
-            @include row-between;
-            gap: 10px;
-            padding: 12px 0;
-            position: relative;
-        }
-
-        &.general-navbar {
-            .category-menu-button {
-                background-color: $primary-color;
-                @include row-center;
-                gap: 10px;
-                min-width: 160px;
-                min-height: 40px;
-                color: #fff;
-                border-radius: 3px;
-                -webkit-border-radius: 3px;
-                -moz-border-radius: 3px;
-                -ms-border-radius: 3px;
-                -o-border-radius: 3px;
-                cursor: pointer;
-
-                &:hover {
-                    animation: $pulse-primary;
-                    -webkit-animation: $pulse-primary;
-                }
-
-                img {
-                    width: 24px;
-                    height: 24px;
-                    object-fit: contain;
-                }
-
-                span {
-                    color: #FFF;
-                    font-family: Inter;
-                    font-size: 15px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
+            z-index: 39090;
+            .general-categories-wrapper{
+                .category-panel {
+                    .categories{
+                        box-shadow: 0 0 10px $black-2;
+                    }
                 }
             }
+        }
 
+        .row {
+            width: 100%;
+            margin: auto;
+            padding: 12px 0;
+
+            .col-12,
+            .col-6 {
+                padding: 0;
+            }
+        }
+
+        &.mobile-navbar {
             .row {
+                position: relative;
+                .left-col {
+                    @include row-justify-start;
+                }
+    
+                .right-col {
+                    @include row-justify-end;
+                }
+            }
+        }
+        &.general-navbar {
+            .row {
+                position: relative;
                 .nav-col {
                     padding: 0;
 
@@ -77,8 +68,9 @@ header {
                 }
             }
         }
-
-    }
+    }    
 }
+
+
 
 @import "components";
