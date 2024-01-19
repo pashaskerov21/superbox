@@ -117,10 +117,13 @@ document.addEventListener('DOMContentLoaded', function () {
             let cartWidth = $('.product-card .product-image').innerWidth();
             $('.product-card .product-image').css('height', cartWidth + 'px');
 
-            let productMainImage = $('.product-main-image').innerHeight();
+            let productMainImage = $('.product-main-image');
+            let mainImageWidth = productMainImage.innerWidth();
+            let mainImageHeight = productMainImage.innerHeight();
             let productSmallImages = $('.product-small-images');
+            productMainImage.css('height', mainImageWidth + 'px');
             if($(window).width() > 768){
-                productSmallImages.css('height', productMainImage + 'px');
+                productSmallImages.css('height', mainImageHeight + 'px');
             }
         }
         $(window).on('load resize', function () {
