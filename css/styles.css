@@ -2013,7 +2013,8 @@ section.banner-section .static-banners a img {
   align-items: center;
   gap: 20px;
 }
-.general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons a, .general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons button {
+.general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons a,
+.general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons button {
   width: 110px;
   height: 40px;
   display: flex;
@@ -2032,12 +2033,14 @@ section.banner-section .static-banners a img {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
 }
-.general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons a.submit-button, .general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons button.submit-button {
+.general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons a.submit-button,
+.general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons button.submit-button {
   background-color: #ED2027;
   border-color: #ED2027;
   color: #fff;
 }
-.general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons a.reset-button, .general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons button.reset-button {
+.general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons a.reset-button,
+.general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons button.reset-button {
   border-color: #ED2027;
   background-color: #fff;
   color: #ED2027;
@@ -2132,6 +2135,55 @@ section.banner-section .static-banners a img {
   .general-products-section .general-products-wrapper .products-grid .product-support-banner {
     grid-column: span 4;
   }
+}
+.general-products-section .general-products-wrapper .pagination {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+  border-top: 1px solid #D9D9D9;
+  padding: 30px 0;
+}
+.general-products-section .general-products-wrapper .pagination .page-item .page-link {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ED2027;
+  background-color: #fff;
+  font-size: 8px;
+  font-weight: 500;
+  color: #000;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+@media (width >= 768px) {
+  .general-products-section .general-products-wrapper .pagination .page-item .page-link {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
+.general-products-section .general-products-wrapper .pagination .page-item .page-link:focus {
+  box-shadow: none;
+}
+.general-products-section .general-products-wrapper .pagination .page-item:hover .page-link, .general-products-section .general-products-wrapper .pagination .page-item.active .page-link {
+  background-color: #ED2027;
+  color: #fff;
+}
+.general-products-section .general-products-wrapper .pagination .page-item.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.general-products-section .general-products-wrapper .pagination .page-item.disabled:hover .page-link {
+  background-color: #fff;
+  color: #000;
 }
 .general-products-section .general-products-wrapper .product-pagination {
   margin-top: 40px;
