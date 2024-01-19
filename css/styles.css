@@ -260,6 +260,18 @@ section {
   font-weight: 500;
   line-height: normal;
   margin-bottom: 35px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (width >= 992px) {
+  .section-title {
+    justify-content: flex-start;
+    text-align: start;
+  }
 }
 @media (width >= 992px) {
   .section-title.secondary {
@@ -368,7 +380,7 @@ section {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  text-decoration-line: strikethrough;
+  text-decoration: line-through;
 }
 .product-card .info .product-buttons {
   width: 100%;
@@ -1810,6 +1822,8 @@ section.banner-section .static-banners a img {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
+  max-width: 1900px;
+  margin: auto;
   grid-template-areas: "item-1" "item-2" "item-3";
 }
 @media (width >= 576px) {
@@ -1821,16 +1835,20 @@ section.banner-section .static-banners a img {
 .static-images-section .image-item {
   display: block;
   width: 100%;
+  max-width: 940px;
   height: auto;
 }
 .static-images-section .image-item:nth-child(1) {
   grid-area: item-1;
+  max-height: 650px;
 }
 .static-images-section .image-item:nth-child(2) {
   grid-area: item-2;
+  max-height: 305px;
 }
 .static-images-section .image-item:nth-child(3) {
   grid-area: item-3;
+  max-height: 305px;
 }
 .static-images-section .image-item img {
   width: 100%;
@@ -1866,8 +1884,8 @@ section.banner-section .static-banners a img {
 }
 .services-section .service-item .service-icon {
   width: 100%;
-  max-width: 200px;
-  height: 200px;
+  max-width: 150px;
+  height: 150px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1995,7 +2013,7 @@ section.banner-section .static-banners a img {
   align-items: center;
   gap: 20px;
 }
-.general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons button {
+.general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons a, .general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons button {
   width: 110px;
   height: 40px;
   display: flex;
@@ -2014,12 +2032,12 @@ section.banner-section .static-banners a img {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
 }
-.general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons button.submit-button {
+.general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons a.submit-button, .general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons button.submit-button {
   background-color: #ED2027;
   border-color: #ED2027;
   color: #fff;
 }
-.general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons button.reset-button {
+.general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons a.reset-button, .general-products-section .general-products-wrapper .product-left-filters .filter-form-buttons button.reset-button {
   border-color: #ED2027;
   background-color: #fff;
   color: #ED2027;
@@ -2664,13 +2682,16 @@ section.banner-section .static-banners a img {
   width: 200px;
 }
 .basket-table-wrapper table .image-td .product-image {
-  width: 100%;
+  width: 150px;
+  height: 150px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 .basket-table-wrapper table .image-td .product-image img {
+  width: 150px;
+  height: 150px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -2914,8 +2935,12 @@ section.banner-section .static-banners a img {
 }
 .checkout-form .basket-information .info-row.product .product-image {
   margin-right: 15px;
+  width: 120px;
+  height: 120px;
 }
 .checkout-form .basket-information .info-row.product .product-image img {
+  width: 120px;
+  height: 120px;
   -o-object-fit: contain;
      object-fit: contain;
 }

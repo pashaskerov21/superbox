@@ -77,8 +77,12 @@
 
                 .product-image {
                     margin-right: 15px;
+                    width: 120px;
+                    height: 120px;
 
                     img {
+                        width: 120px;
+                        height: 120px;
                         object-fit: contain;
                     }
                 }
@@ -145,9 +149,10 @@
         padding: 12px;
         font-weight: 600;
         font-size: 18px;
-        &:hover{
+
+        &:hover {
             animation: $pulse-primary;
             -webkit-animation: $pulse-primary;
-}
+        }
     }
 }

@@ -30,11 +30,14 @@
             width: 200px;
 
             .product-image {
-                width: 100%;
+                width: 150px;
+                height: 150px;
 
                 @include row-center;
 
                 img {
+                    width: 150px;
+                    height: 150px;
                     object-fit: contain;
                 }
             }
@@ -167,10 +170,11 @@
             font-weight: 600;
             font-size: 18px;
             @include row-center;
-            &:hover{
+
+            &:hover {
                 animation: $pulse-primary;
                 -webkit-animation: $pulse-primary;
-}
+            }
         }
     }
 }

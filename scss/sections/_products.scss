@@ -90,7 +90,7 @@
                 @include row-between;
                 gap: 20px;
 
-                button {
+                a,button {
                     width: 110px;
                     height: 40px;
                     @include row-center;

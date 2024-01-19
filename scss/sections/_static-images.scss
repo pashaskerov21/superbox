@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
+    max-width: 1900px;
+    margin: auto;
     grid-template-areas:
         "item-1"
         "item-2"
@@ -17,18 +19,24 @@
     .image-item {
         display: block;
         width: 100%;
+        max-width: 940px;
         height: auto;
+        
 
         &:nth-child(1) {
             grid-area: item-1;
+            max-height: 650px;
+            
         }
 
         &:nth-child(2) {
             grid-area: item-2;
+            max-height: 305px;
         }
 
         &:nth-child(3) {
             grid-area: item-3;
+            max-height: 305px;
         }
 
         img {

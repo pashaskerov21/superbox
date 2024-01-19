@@ -93,6 +93,13 @@
     font-weight: 500;
     line-height: normal;
     margin-bottom: 35px;
+    width: 100%;
+    @include row-center;
+    text-align: center;
+    @media (width >= 992px){
+        justify-content: flex-start;
+        text-align: start;
+    }
 
     &.secondary {
         @media (width >=992px) {
@@ -196,7 +203,7 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
-                text-decoration-line: strikethrough;
+                text-decoration: line-through;
             }
         }
 
